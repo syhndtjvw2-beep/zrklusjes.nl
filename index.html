@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z.R Klusjes — Schilder & Renovatie Amsterdam Oost</title>
+  <meta name="description" content="Z.R Klusjes — schilder- en renovatiewerk in Amsterdam Oost. Strakke afwerking, heldere prijs en nette oplevering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#182218;--panel:#202d20;--text:#f2f0e4;--muted:#aeb6a8;--line:#3a4739;--lime:#c8f542;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}
+    header{border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.02em}.brand span{color:var(--lime)}.location{font:500 11px "DM Mono",monospace;letter-spacing:.16em;color:var(--muted);margin-left:9px}
+    .quote{font:500 12px "DM Mono",monospace;letter-spacing:.16em;text-transform:uppercase}.quote:hover{color:var(--lime)}
+    .hero{padding:78px 0 42px}.eyebrow,.section-label{font:500 11px "DM Mono",monospace;letter-spacing:.18em;color:var(--lime);text-transform:uppercase}
+    h1{font-size:clamp(48px,9vw,104px);line-height:.88;letter-spacing:-.055em;text-transform:uppercase;margin:22px 0 28px;max-width:900px}
+    h1 span{color:var(--lime)}.intro{font-size:clamp(17px,2vw,21px);color:#d5d9cf;max-width:680px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 44px}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:9px;padding:14px 20px;font-weight:800}.primary{background:var(--lime);color:#172016;border-color:var(--lime)}.btn:hover{transform:translateY(-1px)}
+    .heroimg{height:clamp(300px,50vw,560px);border-radius:16px;overflow:hidden;background:url("https://images.unsplash.com/photo-1589939705384-5185137a7f0a?auto=format&fit=crop&w=1800&q=85") center/cover}
+    section{padding:84px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;margin-bottom:35px}.section-head h2{margin:0;font-size:clamp(32px,5vw,58px);line-height:1;letter-spacing:-.045em;text-transform:uppercase}
+    .items{border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:80px 1fr 1.25fr;gap:20px;padding:27px 0;border-bottom:1px solid var(--line)}.num{color:var(--lime);font:500 14px "DM Mono",monospace}.item h3{margin:0;font-size:20px}.item p{margin:0;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{border:1px solid var(--line);border-radius:13px;padding:25px;background:rgba(255,255,255,.015)}.step .num{display:block;margin-bottom:35px}.step h3{margin:0 0 10px}.step p{margin:0;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:var(--panel)}.project img{width:100%;height:230px;object-fit:cover;display:block}.project div{padding:18px}.project strong{display:block;font-size:12px;letter-spacing:.14em}.project p{margin:7px 0 0;color:var(--muted);font-size:14px}
+    .usps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:13px;overflow:hidden}.usp{padding:20px;border-right:1px solid var(--line);font-weight:700}.usp:last-child{border-right:0}
+    .contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}.contact h2{font-size:clamp(40px,6vw,72px);line-height:.95;letter-spacing:-.05em;text-transform:uppercase;margin:16px 0}.contact p{color:var(--muted);max-width:470px}.details{margin-top:28px;font:500 12px "DM Mono",monospace;line-height:2;color:#d7ddd3}.details a:hover{color:var(--lime)}
+    form{display:grid;gap:12px}.field{display:grid;gap:7px}.field label{font:500 10px "DM Mono",monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}input,textarea{width:100%;border:1px solid var(--line);border-radius:9px;background:#121b13;color:var(--text);padding:14px;font:inherit;outline:none}input:focus,textarea:focus{border-color:var(--lime)}textarea{min-height:145px;resize:vertical}.hint{font-size:12px;color:var(--muted);margin:0}
+    footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);font:500 11px "DM Mono",monospace;letter-spacing:.08em;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{padding-top:55px}.item{grid-template-columns:52px 1fr}.item p{grid-column:2}.steps,.projects{grid-template-columns:1fr}.usps{grid-template-columns:1fr 1fr}.usp:nth-child(2){border-right:0}.usp:nth-child(-n+2){border-bottom:1px solid var(--line)}.contact{grid-template-columns:1fr;gap:35px}.heroimg{height:360px}.location{display:none}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand"><span>●</span> Z.R KLUSJES <small class="location">AMSTERDAM OOST</small></div><a class="quote" href="#contact">Offerte →</a></div></header>
+
+<main>
+<section class="hero" style="border-top:0"><div class="wrap">
+  <div class="eyebrow">Schilder & renovatie · Amsterdam Oost</div>
+  <h1>Schilderen<br>Renoveren<br><span>Afronden</span></h1>
+  <p class="intro">Eén vakman voor muren, gevel, hout en een nette oplevering. Thuis in Amsterdam Oost, met eerlijk advies en een strakke afwerking.</p>
+  <div class="actions"><a class="btn primary" href="#contact">Vraag een gratis offerte</a><a class="btn" href="tel:+31630592923">Bel 06 3059 2923</a></div>
+  <div class="heroimg" role="img" aria-label="Schilder aan het werk"></div>
+</div></section>
+
+<section><div class="wrap"><div class="section-head"><div class="section-label">Werkzaamheden</div></div>
+<div class="items">
+  <article class="item"><div class="num">01</div><h3>Binnenschilderwerk</h3><p>Muren, plafonds, kozijnen, deuren en trappen. Voorbereid, geschuurd en strak afgewerkt.</p></article>
+  <article class="item"><div class="num">02</div><h3>Buitenschilderwerk</h3><p>Gevel, daklijsten, boeidelen en balkons. Goede verf, meerdere lagen en langdurige bescherming.</p></article>
+  <article class="item"><div class="num">03</div><h3>Behangen & stucwerk</h3><p>Behang aanbrengen of verwijderen, scheuren en oneffenheden glad maken voor een strakke ondergrond.</p></article>
+  <article class="item"><div class="num">04</div><h3>Houtrot & houtreparatie</h3><p>Verrot hout verwijderen, repareren met houtrotvuller of nieuw hout en volledig afwerken.</p></article>
+  <article class="item"><div class="num">05</div><h3>Renovatie & verbouwing</h3><p>Van een kale ruimte naar een afgewerkte ruimte: wanden, afwerking en aansluitend schilderwerk.</p></article>
+  <article class="item"><div class="num">06</div><h3>Kluswerk op locatie</h3><p>Kleine en grotere werkzaamheden in en om het huis. Vraag gerust wat er mogelijk is.</p></article>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-label">Werkwijze</div><div class="steps" style="margin-top:35px">
+  <div class="step"><span class="num">01</span><h3>CONTACT</h3><p>U vertelt per mail of telefoon wat u wilt laten doen. Ik denk mee over de aanpak.</p></div>
+  <div class="step"><span class="num">02</span><h3>OFFERTE</h3><p>Werk en materiaal vooraf op een rij, met een duidelijke prijs. Geen verrassingen achteraf.</p></div>
+  <div class="step"><span class="num">03</span><h3>UITVOERING</h3><p>Netjes afplakken, vakkundig werken en alles schoon en compleet opleveren.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-label">Recent werk</div><div class="projects" style="margin-top:35px">
+  <article class="project"><img src="https://images.unsplash.com/photo-1562259949-e8e768c64c05?auto=format&fit=crop&w=1000&q=85" alt="Schilderwerk in woonkamer"><div><strong>WOONKAMER</strong><p>Wanden en plafond strak in de verf, met haakse lijnen tot in de hoek.</p></div></article>
+  <article class="project"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=85" alt="Voordeur en gevel"><div><strong>VOORDEUR & GEVEL</strong><p>Deur en kozijnen geschuurd, geprimed en in een diepe kleur gezet.</p></div></article>
+  <article class="project"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Hal met afgewerkte wanden"><div><strong>HAL</strong><p>Behang strak aangebracht, naden onzichtbaar, randen netjes afgewerkt.</p></div></article>
+</div></div></section>
+
+<section><div class="wrap"><div class="usps"><div class="usp">Vakkundig afgewerkt</div><div class="usp">Nette oplevering</div><div class="usp">Meedenkend</div><div class="usp">Heldere prijs</div></div></div></section>
+
+<section id="contact"><div class="wrap contact"><div><div class="section-label">Kom in contact</div><h2>Laat weten wat er moet gebeuren.</h2><p>Vertel kort wat u wilt schilderen of renoveren. Ik reageer persoonlijk en denk mee over de aanpak. Wat het kost maken we persoonlijk bekend, zodra ik weet wat er moet gebeuren.</p><div class="details">AMSTERDAM OOST<br><a href="mailto:zefanjawesthiner@outlook.com">zefanjawesthiner@outlook.com</a><br><a href="tel:+31630592923">06 3059 2923</a></div></div>
+<form id="contactForm"><div class="field"><label for="name">Naam</label><input id="name" name="name" required></div><div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required></div><div class="field"><label for="phone">Telefoon</label><input id="phone" name="phone"></div><div class="field"><label for="message">Bericht</label><textarea id="message" name="message" required></textarea></div><button class="btn primary" type="submit">Verstuur aanvraag</button><p class="hint">Het formulier opent uw e-mailprogramma met de aanvraag al ingevuld.</p></form>
+</div></section>
+</main>
+
+<footer class="wrap"><div>WERKGEBIED · AMSTERDAM OOST</div><div>© 2026 Z.R KLUSJES — BEHEER</div></footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f=new FormData(this);
+  const subject=encodeURIComponent('Offerteaanvraag — Z.R Klusjes');
+  const body=encodeURIComponent(`Naam: ${f.get('name')}\nE-mail: ${f.get('email')}\nTelefoon: ${f.get('phone')}\n\nBericht:\n${f.get('message')}`);
+  window.location.href=`mailto:zefanjawesthiner@outlook.com?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
