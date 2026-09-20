@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{--navy:#0b1d2d;--navy2:#132d43;--gold:#c7962e;--gold2:#e0b34e;--cream:#f5f3ee;--text:#172a3a;--muted:#667482}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:'DM Sans',Arial,sans-serif;line-height:1.6;background:#fff}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* ===== HERO / TOPBAR ===== */
+.hero{position:relative;min-height:720px;background:linear-gradient(110deg,rgba(7,25,40,.92),rgba(7,25,40,.66)),url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=2000&q=85') center/cover;color:#fff;padding:0 6%}
+.topbar{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px 0;flex-wrap:wrap}
+.logo{width:150px;height:64px;object-fit:contain;background:#fff;border-radius:8px;padding:4px}
+.topbar-actions{display:flex;align-items:center;gap:10px}
+.wa,.menuBtn{border:1px solid rgba(255,255,255,.35);background:rgba(7,25,40,.7);color:#fff;padding:11px 17px;border-radius:7px;text-decoration:none;font-weight:700;cursor:pointer;white-space:nowrap}
+.wa:hover,.menuBtn:hover{background:rgba(7,25,40,.9);border-color:rgba(255,255,255,.55)}
+.menuBtn{font:inherit}
+.menu{position:absolute;z-index:30;right:6%;top:80px;width:220px;background:#fff;color:var(--text);border-radius:10px;padding:10px;box-shadow:0 18px 45px #0004;display:none}
+.menu.open{display:block}
+.menu a{display:block;text-decoration:none;padding:12px 14px;border-radius:6px;font-weight:600}
+.menu a:hover{background:var(--cream)}
+.heroText{max-width:800px;padding-top:90px;padding-bottom:80px}
+.heroText small,.intro small,.projects>small,.reviews>small{color:var(--gold2);font-weight:800;letter-spacing:2px}
+.heroText h1{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,84px);line-height:1.05;margin:12px 0 22px}
+.heroText p{font-size:19px;max-width:680px;color:#e4e9ed}
+.button{display:inline-block;margin-top:20px;padding:14px 22px;border-radius:7px;background:var(--gold);color:#fff;text-decoration:none;font-weight:700}
+.button:hover{background:#af7f20}
+
+/* ===== SECTIONS (consistent, non-overlapping spacing) ===== */
+.intro{padding:80px 6% 30px;max-width:850px}
+.intro h2,.projects h2,.reviews h2{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,58px);line-height:1.15;margin:10px 0}
+.intro p,.projects>p{color:var(--muted);font-size:17px}
+
+.work{padding:20px 6% 80px}
+.card{margin:0 0 40px;display:grid;grid-template-columns:38% 1fr;gap:32px;align-items:center;padding:26px;border:1px solid #e1e5e8;border-radius:14px;background:#fff;overflow:hidden}
+.copy b{color:var(--gold);font-size:13px;letter-spacing:2px}
+.copy h3{font-family:'Playfair Display',serif;font-size:30px;line-height:1.15;margin:10px 0}
+.copy p{color:var(--muted)}
+
+/* ===== PHOTO SLIDER (smaller, fixed height, side-by-side) ===== */
+.slider{position:relative;min-width:0}
+.track{display:flex;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-behavior:smooth;scroll-snap-type:x mandatory;border-radius:10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.track img{width:100%;min-width:100%;height:220px;object-fit:cover;border-radius:10px;scroll-snap-align:start;flex-shrink:0}
+.arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;border-radius:50%;background:#fff;color:var(--navy);font-size:18px;box-shadow:0 5px 16px #0004;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1}
+.arrow:hover{background:var(--gold);color:#fff}
+.prev{left:8px}.next{right:8px}
+
+.services{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.services div{padding:22px;background:var(--cream);border-radius:10px}
+.services strong{display:block;font-size:17px}
+.services span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+
+.projects{padding:80px 6%;background:var(--navy);color:#fff}
+.projects>p{color:#c8d2da}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.grid img{width:100%;height:200px;object-fit:cover;border-radius:12px}
+
+.reviews{padding:80px 6%;background:var(--cream)}
+.reviewGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.reviewGrid article{background:#fff;padding:26px;border-radius:12px;border:1px solid #e6e2d8}
+.reviewGrid article>div{color:var(--gold);letter-spacing:3px}
+.reviewGrid p{font-size:15px}
+.reviewGrid b{font-size:13px}
+
+/* ===== FOOTER / CONTACT (fully black) ===== */
+footer{background:#000;color:#fff}
+.footer{padding:70px 6%;display:grid;grid-template-columns:1.2fr 1fr auto;gap:40px;align-items:center}
+.footer h2{font-family:'Playfair Display',serif;font-size:38px;line-height:1.15;margin:10px 0}
+.footer p{color:#bfcbd4;max-width:500px}
+.contact{display:flex;flex-direction:column;gap:12px}
+.contact a,.contact span{color:#e3e8ec;text-decoration:none}
+.contact a:hover{color:var(--gold2)}
+.button.light{background:var(--gold);white-space:nowrap}
+.copyFoot{border-top:1px solid #ffffff12;padding:18px 6%;color:#9eabb5;font-size:13px;background:#000}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:950px){
+ .card{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .reviewGrid{grid-template-columns:1fr}
+ .footer{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .hero{min-height:auto;padding:0 5%}
+ .topbar{padding-top:14px;gap:10px}
+ .logo{width:110px;height:48px}
+ .topbar-actions{gap:8px}
+ .wa,.menuBtn{padding:8px 11px;font-size:12.5px}
+ .menu{top:74px;right:5%;width:190px}
+ .heroText{padding-top:60px;padding-bottom:60px}
+ .heroText h1{font-size:38px}
+ .heroText p{font-size:15.5px}
+ .intro,.work,.projects,.reviews{padding-left:5%;padding-right:5%}
+ .card{padding:18px;margin-bottom:20px}
+ .copy h3{font-size:26px}
+ .track img{height:170px}
+ .arrow{width:32px;height:32px;font-size:15px}
+ .services{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
+ .grid img{height:180px}
+ .reviewGrid{grid-template-columns:1fr}
+ .footer{grid-template-columns:1fr;padding:50px 5%;text-align:left}
+ .footer h2{font-size:30px}
+ .copyFoot{padding:16px 5%}
+}
